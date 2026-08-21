@@ -1,6 +1,6 @@
 [project]
 name = "steam-api"
-version = "0.1.0"
+version = "0.2.0"
 description = "Fetch a Steam account's inventory over a real CM (Connection Manager) session, from a desktop/mobile refresh token"
 readme = "README.md"
 requires-python = ">=3.10"
