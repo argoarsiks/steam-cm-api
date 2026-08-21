@@ -1,5 +1,5 @@
 [project]
-name = "steam-api"
+name = "steam-cm-api"
 version = "0.3.0"
 description = "Fetch a Steam account's inventory over a real CM (Connection Manager) session, from a desktop/mobile refresh token"
 readme = "README.md"
@@ -34,12 +34,12 @@ dev = [
 
 [project.optional-dependencies]
 codegen = ["grpcio-tools>=1.60"]
-# Only needed for `steam-api extract-token` (reads local.vdf's DPAPI-encrypted
+# Only needed for `steam-cm-api extract-token` (reads local.vdf's DPAPI-encrypted
 # ConnectCache) - not needed for the CM client itself.
 local-client = ["pywin32>=306; sys_platform == 'win32'", "vdf>=3.4"]
 
 [project.scripts]
-steam-api = "steam_api.cli:main"
+steam-cm-api = "steam_api.cli:main"
 
 [build-system]
 requires = ["uv_build>=0.10,<0.11"]

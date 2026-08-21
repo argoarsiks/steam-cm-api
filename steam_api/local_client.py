@@ -48,7 +48,7 @@ def read_local_refresh_token(account_name: str) -> str:
     except ImportError as exc:
         raise ImportError(
             "read_local_refresh_token requires the 'local-client' extra: "
-            "pip install steam-api[local-client]"
+            "pip install steam-cm-api[local-client]"
         ) from exc
 
     account_name = account_name.lower()

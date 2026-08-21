@@ -1,4 +1,4 @@
-# steam-api
+# steam-cm-api
 
 Fetch a Steam account's inventory from a desktop/mobile refresh token, over a
 real CM (Connection Manager) session - the same protocol path the official
@@ -76,10 +76,10 @@ CS2 account's items.
 ## CLI
 
 ```powershell
-uv run steam-api inventory <refresh_token> <account_name> 730 2 --json --pretty
-uv run steam-api inventory <refresh_token> <account_name> 730 2 --output inventory.json
-uv run steam-api cookies <refresh_token> <account_name>
-uv run steam-api extract-token <account_name>
+uv run steam-cm-api inventory <refresh_token> <account_name> 730 2 --json --pretty
+uv run steam-cm-api inventory <refresh_token> <account_name> 730 2 --output inventory.json
+uv run steam-cm-api cookies <refresh_token> <account_name>
+uv run steam-cm-api extract-token <account_name>
 ```
 
 `cookies` exchanges the token for `steamLoginSecure` web cookies instead of
