@@ -45,9 +45,11 @@ steam-cm-api = "steam_api.cli:main"
 requires = ["uv_build>=0.10,<0.11"]
 build-backend = "uv_build"
 
-# steam_api/ lives directly at the repo root (no src/ layout).
+# steam_api/ lives directly at the repo root (no src/ layout). Distribution
+# name (steam-cm-api) differs from the import name, so module-name is explicit.
 [tool.uv.build-backend]
 module-root = ""
+module-name = "steam_api"
 
 [tool.ruff]
 include = ["*.py"]
